@@ -373,7 +373,7 @@ footer{background:#111;color:rgba(255,255,255,.85);padding:64px 0 32px}
         <h4>যোগাযোগ</h4>
         <div class="ft-ci"><span>📍</span><span id="ftAddr">ঢাকা, বাংলাদেশ</span></div>
         <div class="ft-ci"><span>📞</span><span id="ftPhone">+880 1700-000000</span></div>
-        <div class="ft-ci"><span>✉️</span><span id="ftEmail">info@luxe.com.bd</span></div>
+        <div class="ft-ci"><span>✉️</span><span id="ftEmail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d3babdb5bc93bfa6abb6fdb0bcbefdb1b7">[email&#160;protected]</a></span></div>
         <div class="ft-ci"><span>⏰</span><span id="ftHours">শনি–বৃহস্পতি ৯টা–৯টা</span></div>
       </div>
     </div>
@@ -480,12 +480,12 @@ footer{background:#111;color:rgba(255,255,255,.85);padding:64px 0 32px}
 
 <div class="toast" id="toast"></div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // =============================================
 // ⚙️ SUPABASE CONFIG
 // =============================================
-const SUPABASE_URL     = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY= 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL     = 'https://qqrjrzstwfqwshrysixg.supabase.co';
+const SUPABASE_ANON_KEY= 'sb_publishable_zhiDdqg0actwn93aLHHvxQ_FCoNYtlR';
 // =============================================
 
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -786,8 +786,4 @@ let toastTimer;
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3000);}
 function go(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
 function closePromo(){document.getElementById('promoBar').style.display='none';document.body.classList.remove('has-promo');}
-window.addEventListener('scroll',()=>{document.getElementById('hdr').style.background=window.scrollY>20?'rgba(255,255,255,.97)':'rgba(255,255,255,.88)';});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeProdModal();closePay();closeSearch();closeMob();if(document.getElementById('cartDr').classList.contains('open'))toggleCart();}});
-</script>
-</body>
-</html>
+window.addEventListener('scroll',()=>{document.getElementById('hdr').style.background=window.scrollY>20?'rgba(255,255,255,.97)':'rgba(255,255,255,.88)'
